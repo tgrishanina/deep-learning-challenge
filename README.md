@@ -33,12 +33,19 @@ What steps did you take in your attempts to increase model performance?
 
 To optimize the model, I attempted the following:
 - Dropping additional feature columns that seemed superfluous (ASK_AMT, SPECIAL_CONSIDERATIONS, and STATUS)
+
+![droppedcolumns.png](https://github.com/tgrishanina/deep-learning-challenge/blob/main/images/droppedcolumns.png)
+
 - Adjusting the bin sizes for rare occurences in the APPLICATION_TYPE and CLASSIFICAITON columns
 - Adding a third hidden layer, then a fourth and fifth
 - Adjusting the number of neurons to 512, 256, 128, 64 and 28 in layers one, two three, four, and five, respectively
+![hiddenlayers.png](https://github.com/tgrishanina/deep-learning-challenge/blob/main/images/hiddenlayers.png)
+
 - Changing the activation function of the output layer from sigmoid to tanh
 - Lowering the learning rate for Adam to allow the model to converge more slowly (and potentially better)
 
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+Summary: 
+
+![results.png](https://github.com/tgrishanina/deep-learning-challenge/blob/main/images/results.png)
 
 The adjustments listed above were used concurrently and one at a time. Unfortunately, none of them resulted in a higher accuracy rate. The model is unable to perform above the 73% threshold. Unless I discover a solution upon further analysis, I would suggest trying a different model altogether, such as decision trees or random forests. These models tend to do well with tabular data such as this, and may be more compatible with noisy data.
