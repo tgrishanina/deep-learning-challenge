@@ -41,4 +41,4 @@ To optimize the model, I attempted the following:
 
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
 
-The adjustments listed above were used concurrently and one at a time. Unfortunately, none of them resulted in a higher accuracy rate. 
+The adjustments listed above were used concurrently and one at a time. Unfortunately, none of them resulted in a higher accuracy rate. The model is unable to perform above the 73% threshold. Unless I discover a solution upon further analysis, I would suggest trying a different model altogether, such as decision trees or random forests. These models tend to do well with tabular data such as this, and may be more compatible with noisy data.
