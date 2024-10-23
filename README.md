@@ -34,8 +34,8 @@ What steps did you take in your attempts to increase model performance?
 To optimize the model, I attempted the following:
 - Dropping additional feature columns that seemed superfluous (ASK_AMT, SPECIAL_CONSIDERATIONS, and STATUS)
 - Adjusting the bin sizes for rare occurences in the APPLICATION_TYPE and CLASSIFICAITON columns
-- Adding a third hidden layer
-- Adjusting the number of neurons to 256, 128, and 64 in layers one, two and three, respectively
+- Adding a third hidden layer, then a fourth and fifth
+- Adjusting the number of neurons to 512, 256, 128, 64 and 28 in layers one, two three, four, and five, respectively
 - Changing the activation function of the output layer from sigmoid to tanh
 - Lowering the learning rate for Adam to allow the model to converge more slowly (and potentially better)
 
